@@ -1,0 +1,18 @@
+=== Node v22.23.4 ===
+node v22.23.4
+150 ms request, 500 ms pause                   response at   402 ms   exit   514 ms after SIGTERM   code 0   "draining" logged 1x
+3000 ms request, 500 ms pause (still busy at close) response at  3015 ms   exit  8833 ms after SIGTERM   code 0   "draining" logged 1x
+3000 ms request, 5000 ms pause (done before close) response at  3011 ms   exit  5018 ms after SIGTERM   code 0   "draining" logged 1x
+second SIGTERM 300 ms after the first          response at   160 ms   exit  1508 ms after SIGTERM   code 0   "draining" logged 1x
+=== Node v24.22.3 ===
+node v24.22.3
+150 ms request, 500 ms pause                   response at   161 ms   exit   516 ms after SIGTERM   code 0   "draining" logged 1x
+3000 ms request, 500 ms pause (still busy at close) response at  3009 ms   exit  8818 ms after SIGTERM   code 0   "draining" logged 1x
+3000 ms request, 5000 ms pause (done before close) response at  3136 ms   exit  5015 ms after SIGTERM   code 0   "draining" logged 1x
+second SIGTERM 300 ms after the first          response at   162 ms   exit  1510 ms after SIGTERM   code 0   "draining" logged 1x
+=== Node v26.13.1 ===
+node v26.13.1
+150 ms request, 500 ms pause                   response at   172 ms   exit   524 ms after SIGTERM   code 0   "draining" logged 1x
+3000 ms request, 500 ms pause (still busy at close) response at  3012 ms   exit  8826 ms after SIGTERM   code 0   "draining" logged 1x
+3000 ms request, 5000 ms pause (done before close) response at  3015 ms   exit  5015 ms after SIGTERM   code 0   "draining" logged 1x
+second SIGTERM 300 ms after the first          response at   160 ms   exit  1510 ms after SIGTERM   code 0   "draining" logged 1x

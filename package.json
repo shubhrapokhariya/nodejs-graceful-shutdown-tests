@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-graceful-shutdown-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Measure how many HTTP requests a Node.js server drops when it receives SIGTERM under load.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "pilot": "node src/run-one.mjs --framework node --strategy drain --lag 1000",
+    "matrix": "node src/run-matrix.mjs",
+    "matrix:quick": "node src/run-matrix.mjs --reps 1 --frameworks node --lags 0,1000",
+    "report": "node src/report.mjs",
+    "signals": "node experiments/signal-forwarding.mjs",
+    "target": "node src/signal-target.mjs",
+    "start": "node src/signal-target.mjs",
+    "module": "node src/run-matrix.mjs --strategies module --lags 0,1000,2500 --reps 2 --label module --out results/raw-module.jsonl",
+    "keepalive": "node experiments/keepalive-hint.mjs",
+    "close-idle": "node experiments/close-idle-connections.mjs",
+    "numbers": "node src/article-numbers.mjs",
+    "long-request": "node experiments/long-request.mjs"
+  },
+  "dependencies": {
+    "@hono/node-server": "2.1.8",
+    "express": "5.3.0",
+    "fastify": "5.12.8",
+    "hono": "4.13.18"
+  }
+}

@@ -1,0 +1,18 @@
+
+> nodejs-graceful-shutdown-tests@1.0.0 signals
+> node experiments/signal-forwarding.mjs
+
+Node v22.23.4 on linux
+
+┌─────────┬─────────────────────────────┬─────────┬────────────────────┬──────────────────────────────────────────────┬────────────────────────────────────┐
+│ (index) │ wrapper                     │ handler │ shellReplacedByApp │ verdict                                      │ wrapperExit                        │
+├─────────┼─────────────────────────────┼─────────┼────────────────────┼──────────────────────────────────────────────┼────────────────────────────────────┤
+│ 0       │ 'node app.js (direct)'      │ true    │ true               │ 'forwarded: handler ran'                     │ '{"code":0,"signal":null}'         │
+│ 1       │ 'node app.js (direct)'      │ false   │ true               │ 'forwarded: default action stopped the app'  │ '{"code":null,"signal":"SIGTERM"}' │
+│ 2       │ 'sh -c "node app.js"'       │ true    │ false              │ 'NOT forwarded: app kept running (orphaned)' │ '{"code":null,"signal":"SIGTERM"}' │
+│ 3       │ 'sh -c "node app.js"'       │ false   │ false              │ 'NOT forwarded: app kept running (orphaned)' │ '{"code":null,"signal":"SIGTERM"}' │
+│ 4       │ 'sh -c "node app.js; echo"' │ true    │ false              │ 'NOT forwarded: app kept running (orphaned)' │ '{"code":null,"signal":"SIGTERM"}' │
+│ 5       │ 'sh -c "node app.js; echo"' │ false   │ false              │ 'NOT forwarded: app kept running (orphaned)' │ '{"code":null,"signal":"SIGTERM"}' │
+│ 6       │ 'npm start'                 │ true    │ false              │ 'NOT forwarded: app kept running (orphaned)' │ '{"code":null,"signal":"SIGTERM"}' │
+│ 7       │ 'npm start'                 │ false   │ false              │ 'NOT forwarded: app kept running (orphaned)' │ '{"code":null,"signal":"SIGTERM"}' │
+└─────────┴─────────────────────────────┴─────────┴────────────────────┴──────────────────────────────────────────────┴────────────────────────────────────┘

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-24T06:17:29.425Z",
+  "node": "v22.23.4",
+  "platform": "Linux (WSL2)",
+
+  "frameworks": {
+    "express": "5.3.0",
+    "fastify": "5.12.8",
+    "hono": "4.13.18",
+    "@hono/node-server": "2.1.8"
+  }
+}

@@ -1,0 +1,33 @@
+=== Node v22.23.4 ===
+node v22.23.4
+keepAliveTimeout  client                 exit after server.close()   formula (100 ms left + timeout + 1000 buffer)
+1000              node-agent               110 ms                  ~2100 ms
+1000              node-agent buffer 0     2102 ms                  ~2100 ms
+1000              raw-socket              2103 ms                  ~2100 ms
+3000              node-agent              4103 ms                  ~4100 ms
+3000              node-agent buffer 0     4107 ms                  ~4100 ms
+3000              raw-socket              4105 ms                  ~4100 ms
+close only                                           exit 6121 ms
+close, then closeIdleConnections after the response  exit 302 ms
+=== Node v24.22.3 ===
+node v24.22.3
+keepAliveTimeout  client                 exit after server.close()   formula (100 ms left + timeout + 1000 buffer)
+1000              node-agent               123 ms                  ~2100 ms
+1000              node-agent buffer 0     2105 ms                  ~2100 ms
+1000              raw-socket              2105 ms                  ~2100 ms
+3000              node-agent              4102 ms                  ~4100 ms
+3000              node-agent buffer 0     4108 ms                  ~4100 ms
+3000              raw-socket              4106 ms                  ~4100 ms
+close only                                           exit 6121 ms
+close, then closeIdleConnections after the response  exit 301 ms
+=== Node v26.13.1 ===
+node v26.13.1
+keepAliveTimeout  client                 exit after server.close()   formula (100 ms left + timeout + 1000 buffer)
+1000              node-agent               117 ms                  ~2100 ms
+1000              node-agent buffer 0     2103 ms                  ~2100 ms
+1000              raw-socket              2106 ms                  ~2100 ms
+3000              node-agent              4106 ms                  ~4100 ms
+3000              node-agent buffer 0     4107 ms                  ~4100 ms
+3000              raw-socket              4107 ms                  ~4100 ms
+close only                                           exit 6119 ms
+close, then closeIdleConnections after the response  exit 302 ms

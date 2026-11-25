@@ -1,0 +1,3 @@
+HANDLER      RESULT 2s after SIGTERM from outside the namespace
+HANDLE=1     stopped (handler ran)                         (app saw itself as pid=1)
+HANDLE=0     STILL RUNNING (SIGTERM was ignored; would need SIGKILL) (app saw itself as pid=1)

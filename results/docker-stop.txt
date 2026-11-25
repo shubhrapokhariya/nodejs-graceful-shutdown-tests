@@ -1,0 +1,18 @@
+exec form: node app.js             handler=1  stop took   0.3s  exit code 0
+shell form: sh -c "node app.js"    handler=1  stop took  10.3s  exit code 137
+npm start                          handler=1  stop took   0.8s  exit code 1
+exec form + docker run --init      handler=1  stop took   0.3s  exit code 0
+exec form: node app.js             handler=0  stop took  10.3s  exit code 137
+shell form: sh -c "node app.js"    handler=0  stop took  10.3s  exit code 137
+npm start                          handler=0  stop took   0.8s  exit code 1
+exec form + docker run --init      handler=0  stop took   0.2s  exit code 143
+v22.23.5
+docker server 29.9.2
+=== container logs, HANDLE=1, did the app's handler run? ===
+--- exec form: node app.js
+READY pid=1 ppid=0 handle=true
+GOT SIGTERM
+--- npm start
+READY pid=20 ppid=19 handle=true
+--- sh -c 'node app.js'
+READY pid=8 ppid=1 handle=true

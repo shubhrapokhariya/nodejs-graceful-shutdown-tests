@@ -1,0 +1,96 @@
+28 configs x 3 reps = 84 runs (label=no-keepalive, keepAlive=false)
+[1/84 0.0min] node/drain lag=1000 rep=1: inFlightFail=0 newFail=200/200 exit={"code":0,"signal":null,"afterSigtermMs":166}
+[2/84 0.1min] node/drain lag=2500 rep=1: inFlightFail=0 newFail=500/501 exit={"code":0,"signal":null,"afterSigtermMs":158}
+[3/84 0.1min] node/drain-delay lag=1000 rep=1: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1507}
+[4/84 0.2min] node/drain-delay lag=2500 rep=1: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1651}
+[5/84 0.2min] node/drain-delay-close lag=1000 rep=1: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1523}
+[6/84 0.3min] node/drain-delay-close lag=2500 rep=1: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1657}
+[7/84 0.3min] express/drain lag=1000 rep=1: inFlightFail=0 newFail=200/200 exit={"code":0,"signal":null,"afterSigtermMs":170}
+[8/84 0.4min] express/drain lag=2500 rep=1: inFlightFail=0 newFail=500/501 exit={"code":0,"signal":null,"afterSigtermMs":157}
+[9/84 0.5min] express/drain-delay lag=1000 rep=1: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1510}
+[10/84 0.5min] express/drain-delay lag=2500 rep=1: inFlightFail=0 newFail=201/501 exit={"code":0,"signal":null,"afterSigtermMs":1653}
+[11/84 0.6min] express/drain-delay-close lag=1000 rep=1: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1514}
+[12/84 0.6min] express/drain-delay-close lag=2500 rep=1: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1659}
+[13/84 0.7min] fastify/drain lag=1000 rep=1: inFlightFail=0 newFail=199/200 exit={"code":0,"signal":null,"afterSigtermMs":178}
+[14/84 0.7min] fastify/drain lag=2500 rep=1: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[15/84 0.8min] fastify/drain-delay lag=1000 rep=1: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1511}
+[16/84 0.8min] fastify/drain-delay lag=2500 rep=1: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1656}
+[17/84 0.9min] fastify/drain-delay-close lag=1000 rep=1: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1519}
+[18/84 0.9min] fastify/drain-delay-close lag=2500 rep=1: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1654}
+[19/84 1.0min] fastify/native lag=1000 rep=1: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[20/84 1.0min] fastify/native lag=2500 rep=1: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":153}
+[21/84 1.1min] fastify/native-delay lag=1000 rep=1: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1508}
+[22/84 1.2min] fastify/native-delay lag=2500 rep=1: inFlightFail=0 newFail=201/501 exit={"code":0,"signal":null,"afterSigtermMs":1653}
+[23/84 1.2min] hono/drain lag=1000 rep=1: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":151}
+[24/84 1.3min] hono/drain lag=2500 rep=1: inFlightFail=0 newFail=501/501 exit={"code":0,"signal":null,"afterSigtermMs":151}
+[25/84 1.3min] hono/drain-delay lag=1000 rep=1: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1519}
+[26/84 1.4min] hono/drain-delay lag=2500 rep=1: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1657}
+[27/84 1.4min] hono/drain-delay-close lag=1000 rep=1: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1514}
+[28/84 1.5min] hono/drain-delay-close lag=2500 rep=1: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1655}
+[29/84 1.5min] node/drain lag=1000 rep=2: inFlightFail=0 newFail=200/200 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[30/84 1.6min] node/drain lag=2500 rep=2: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[31/84 1.6min] node/drain-delay lag=1000 rep=2: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1509}
+[32/84 1.7min] node/drain-delay lag=2500 rep=2: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1657}
+[33/84 1.7min] node/drain-delay-close lag=1000 rep=2: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1509}
+[34/84 1.8min] node/drain-delay-close lag=2500 rep=2: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1656}
+[35/84 1.8min] express/drain lag=1000 rep=2: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[36/84 1.9min] express/drain lag=2500 rep=2: inFlightFail=0 newFail=501/501 exit={"code":0,"signal":null,"afterSigtermMs":153}
+[37/84 1.9min] express/drain-delay lag=1000 rep=2: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1512}
+[38/84 2.0min] express/drain-delay lag=2500 rep=2: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1654}
+[39/84 2.0min] express/drain-delay-close lag=1000 rep=2: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1510}
+[40/84 2.1min] express/drain-delay-close lag=2500 rep=2: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1658}
+[41/84 2.1min] fastify/drain lag=1000 rep=2: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[42/84 2.2min] fastify/drain lag=2500 rep=2: inFlightFail=0 newFail=501/501 exit={"code":0,"signal":null,"afterSigtermMs":153}
+[43/84 2.2min] fastify/drain-delay lag=1000 rep=2: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1512}
+[44/84 2.3min] fastify/drain-delay lag=2500 rep=2: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1657}
+[45/84 2.3min] fastify/drain-delay-close lag=1000 rep=2: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1506}
+[46/84 2.4min] fastify/drain-delay-close lag=2500 rep=2: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1659}
+[47/84 2.4min] fastify/native lag=1000 rep=2: inFlightFail=0 newFail=200/200 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[48/84 2.5min] fastify/native lag=2500 rep=2: inFlightFail=0 newFail=501/501 exit={"code":0,"signal":null,"afterSigtermMs":153}
+[49/84 2.5min] fastify/native-delay lag=1000 rep=2: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1512}
+[50/84 2.6min] fastify/native-delay lag=2500 rep=2: inFlightFail=0 newFail=201/501 exit={"code":0,"signal":null,"afterSigtermMs":1651}
+[51/84 2.6min] hono/drain lag=1000 rep=2: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":150}
+[52/84 2.7min] hono/drain lag=2500 rep=2: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[53/84 2.7min] hono/drain-delay lag=1000 rep=2: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1523}
+[54/84 2.8min] hono/drain-delay lag=2500 rep=2: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1652}
+[55/84 2.8min] hono/drain-delay-close lag=1000 rep=2: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1510}
+[56/84 2.9min] hono/drain-delay-close lag=2500 rep=2: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1652}
+[57/84 2.9min] node/drain lag=1000 rep=3: inFlightFail=0 newFail=200/201 exit={"code":0,"signal":null,"afterSigtermMs":157}
+[58/84 3.0min] node/drain lag=2500 rep=3: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":150}
+[59/84 3.0min] node/drain-delay lag=1000 rep=3: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1510}
+[60/84 3.1min] node/drain-delay lag=2500 rep=3: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1653}
+[61/84 3.2min] node/drain-delay-close lag=1000 rep=3: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1515}
+[62/84 3.2min] node/drain-delay-close lag=2500 rep=3: inFlightFail=0 newFail=200/500 exit={"code":0,"signal":null,"afterSigtermMs":1656}
+[63/84 3.2min] express/drain lag=1000 rep=3: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":156}
+[64/84 3.3min] express/drain lag=2500 rep=3: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":151}
+[65/84 3.4min] express/drain-delay lag=1000 rep=3: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1512}
+[66/84 3.4min] express/drain-delay lag=2500 rep=3: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1658}
+[67/84 3.5min] express/drain-delay-close lag=1000 rep=3: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1511}
+[68/84 3.5min] express/drain-delay-close lag=2500 rep=3: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1680}
+[69/84 3.6min] fastify/drain lag=1000 rep=3: inFlightFail=0 newFail=201/201 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[70/84 3.6min] fastify/drain lag=2500 rep=3: inFlightFail=0 newFail=500/500 exit={"code":0,"signal":null,"afterSigtermMs":158}
+[71/84 3.7min] fastify/drain-delay lag=1000 rep=3: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1508}
+[72/84 3.7min] fastify/drain-delay lag=2500 rep=3: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1665}
+[73/84 3.8min] fastify/drain-delay-close lag=1000 rep=3: inFlightFail=0 newFail=0/200 exit={"code":0,"signal":null,"afterSigtermMs":1527}
+[74/84 3.8min] fastify/drain-delay-close lag=2500 rep=3: inFlightFail=0 newFail=201/501 exit={"code":0,"signal":null,"afterSigtermMs":1656}
+[75/84 3.9min] fastify/native lag=1000 rep=3: inFlightFail=0 newFail=200/200 exit={"code":0,"signal":null,"afterSigtermMs":155}
+[76/84 3.9min] fastify/native lag=2500 rep=3: inFlightFail=0 newFail=501/501 exit={"code":0,"signal":null,"afterSigtermMs":163}
+[77/84 4.0min] fastify/native-delay lag=1000 rep=3: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1510}
+[78/84 4.1min] fastify/native-delay lag=2500 rep=3: inFlightFail=0 newFail=199/500 exit={"code":0,"signal":null,"afterSigtermMs":1657}
+[79/84 4.1min] hono/drain lag=1000 rep=3: inFlightFail=0 newFail=200/201 exit={"code":0,"signal":null,"afterSigtermMs":161}
+[80/84 4.2min] hono/drain lag=2500 rep=3: inFlightFail=0 newFail=499/500 exit={"code":0,"signal":null,"afterSigtermMs":160}
+[81/84 4.2min] hono/drain-delay lag=1000 rep=3: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1516}
+[82/84 4.3min] hono/drain-delay lag=2500 rep=3: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1666}
+[83/84 4.3min] hono/drain-delay-close lag=1000 rep=3: inFlightFail=0 newFail=0/201 exit={"code":0,"signal":null,"afterSigtermMs":1518}
+[84/84 4.4min] hono/drain-delay-close lag=2500 rep=3: inFlightFail=0 newFail=200/501 exit={"code":0,"signal":null,"afterSigtermMs":1657}
+done
+4 configs x 2 reps = 8 runs (label=ka-sweep, keepAlive=true)
+[1/8 0.0min] node/drain lag=0 ka=1000 rep=1: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":152}
+[2/8 0.1min] node/drain lag=0 ka=3000 rep=1: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":4154}
+[3/8 0.2min] node/drain lag=0 ka=5000 rep=1: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":6160}
+[4/8 0.4min] node/drain lag=0 ka=8000 rep=1: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":9151}
+[5/8 0.4min] node/drain lag=0 ka=1000 rep=2: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":155}
+[6/8 0.5min] node/drain lag=0 ka=3000 rep=2: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":4164}
+[7/8 0.6min] node/drain lag=0 ka=5000 rep=2: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":6161}
+[8/8 0.8min] node/drain lag=0 ka=8000 rep=2: inFlightFail=0 newFail=0/0 exit={"code":0,"signal":null,"afterSigtermMs":9165}
+done
